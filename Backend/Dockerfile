@@ -1,7 +1,7 @@
 FROM centos:7
 
 LABEL APP="Studentapp"
-LABEL DevopsEngg="Anup"
+LABEL Devops="Aaditya"
 USER root
 WORKDIR /opt/
 ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz .
@@ -15,6 +15,3 @@ ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar lib/my
 EXPOSE 8080
 
 CMD ["bin/catalina.sh" , "run"]
-#ENTRYPOINT [ "bin/catalina.sh" , "RUN" ]
-#CMD bin/catalina.sh RUN 
-#ENTRYPOINT bin/catalina.sh RUN
