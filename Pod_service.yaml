@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Pod 
 metadata: 
   name: newpod
-  namespace: dev
+  namespace: default
   labels:   
     app: newapp
 spec: 
@@ -19,7 +19,7 @@ apiVersion: v1
 kind: Service
 metadata:
     name: newservice
-    namespace: dev 
+    namespace: default
 spec: 
     type: NodePort
     selector: 
